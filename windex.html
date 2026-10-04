@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="wstyle.css">
+</head>
+
+<body>
+
+<div class="weather-container">
+
+    <!-- Title -->
+    <h1>Weather App</h1>
+
+    <!-- Search -->
+    <div class="search-box">
+
+        <input
+                type="text"
+                id="cityInput"
+                placeholder="🔍Search city......."
+        >
+
+        <button id="searchBtn">Search</button>
+
+    </div>
+
+    <p id="errorMessage"></p>
+
+    <!-- Weather Card -->
+    <div class="weather-card">
+
+        <h2 id="cityName">What's the weather like?</h2>
+
+        <div id="weatherIcon">☀️</div>
+
+        <h3 id="temperature"></h3>
+
+        <p id="condition">Enter ur city to find out...</p>
+
+        <div class="weather-details">
+
+            <p>
+                💧 <span id="humidity"></span>
+            </p>
+
+            <p>
+                💨 <span id="wind"></span>
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Forecast Heading -->
+    <h2 class="forecast-title">
+        ✨ A little peek at your week ✨
+    </h2>
+
+    <!-- Forecast -->
+    <div id="forecastContainer" class="forecast-container">
+
+        <div class="forecast-card">
+            <h3>Mon</h3>
+            <p>☀️</p>
+        </div>
+
+        <div class="forecast-card">
+            <h3>Tue</h3>
+            <p>🌧️</p>
+        </div>
+
+        <div class="forecast-card">
+            <h3>Wed</h3>
+            <p>☁️</p>
+        </div>
+
+        <div class="forecast-card">
+            <h3>Thu</h3>
+            <p>☀️</p>
+        </div>
+
+        <div class="forecast-card">
+            <h3>Fri</h3>
+            <p>🌤️</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="wscript.js"></script>
+
+</body>
+</html>
